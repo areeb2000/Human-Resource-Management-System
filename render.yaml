@@ -2,6 +2,7 @@ services:
   - type: web
     name: hrms-lite-backend
     runtime: python
+    rootDir: backend
     buildCommand: "./build.sh"
     startCommand: "gunicorn hrms_project.wsgi:application"
     envVars:
