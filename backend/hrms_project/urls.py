@@ -21,17 +21,18 @@ def api_root(request):
         'message': 'HRMS Lite API is running ✅',
         'version': '1.0.0',
         'endpoints': {
-            'admin':                '/admin/',
-            'employees':            '/api/employees/',
-            'attendance':           '/api/attendance/',
-            'attendance_statistics': '/api/attendance/statistics/',
-            'dashboard_stats':      '/api/attendance/dashboard_stats/',
+            'admin':                 '/admin/',
+            'employees':             '/api/v1/employees/',
+            'attendance':            '/api/v1/attendance/',
+            'attendance_statistics': '/api/v1/attendance/statistics/',
+            'dashboard_stats':       '/api/v1/attendance/dashboard_stats/',
         },
     })
 
 
 urlpatterns = [
-    path('',       api_root,             name='api-root'),
+    path('',       api_root, name='api-root'),
+    path('api/',   api_root, name='api-root-alt'),
     path('admin/', admin.site.urls),
-    path('api/',   include('employees.urls')),
+    path('api/v1/', include('employees.urls')),
 ]
