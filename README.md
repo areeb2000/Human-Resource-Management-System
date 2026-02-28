@@ -1,6 +1,5 @@
 # HRMS Lite
 
-🔥 **Live Frontend (Vercel):** [https://frontend-lxbj9ehh7-md-areeb-inams-projects.vercel.app](https://frontend-lxbj9ehh7-md-areeb-inams-projects.vercel.app)
 
 
 HRMS Lite is a modern, responsive web application designed for HR administrators and managers to efficiently track employee records and daily attendance. It features a sleek glassmorphic UI, real-time dashboard statistics, and a robust REST API backend.
